@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Nowoczesna Strona</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Nawigacja -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-xl font-bold bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">BrandName</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#funkcje" class="hover:text-indigo-600 transition">Funkcje</a>
+                <a href="#o-nas" class="hover:text-indigo-600 transition">O nas</a>
+                <a href="#kontakt" class="hover:text-indigo-600 transition">Kontakt</a>
+            </nav>
+            <div>
+                <a href="#kontakt" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition shadow-sm shadow-indigo-200">Rozpocznij</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-6">
+                <span>🚀 Nowość w wersji 2.0</span>
+            </div>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight mb-6">
+                Zbuduj swoją obecność w <span class="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">sieci</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0">
+                Twórz profesjonalne projekty szybciej i łatwiej. Nowoczesny design, pełna responsywność i gotowość do działania od pierwszego dnia.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <a href="#kontakt" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-xl transition shadow-lg shadow-indigo-200 text-center">Sprawdź oferty</a>
+                <a href="#funkcje" class="bg-white hover:bg-slate-100 text-slate-700 border border-slate-300 font-medium px-6 py-3 rounded-xl transition text-center">Dowiedz się więcej</a>
+            </div>
+        </div>
+        <div class="flex-1 w-full max-w-lg lg:max-w-none">
+            <div class="bg-gradient-to-tr from-indigo-600 to-violet-500 rounded-3xl p-2 shadow-2xl">
+                <div class="bg-white rounded-2xl p-6 sm:p-8">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        </div>
+                        <span class="text-xs text-slate-400">podglad.html</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-8 bg-slate-100 rounded-lg w-3/4"></div>
+                        <div class="h-24 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-500 font-semibold text-sm">Twój projekt tutaj</div>
+                        <div class="h-8 bg-slate-100 rounded-lg w-1/2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Funkcji -->
+    <section id="funkcje" class="bg-white py-20 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-4">Dlaczego warto nas wybrać?</h2>
+                <p class="text-slate-600">Dostarczamy rozwiązania, które pomagają osiągać cele szybciej i bez zbędnych komplikacji.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">⚡</div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">Szybkość działania</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Optymalizacja kodu i nowoczesne technologie gwarantują błyskawiczne ładowanie strony.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-violet-100 text-violet-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">📱</div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">Pełna responsywność</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Strona idealnie wygląda i działa na każdym urządzeniu – od smartfonów po duże monitory.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-bold text-xl mb-6">🔒</div>
+                    <h3 class="text-xl font-semibold mb-2 text-slate-900">Bezpieczeństwo</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Stosujemy sprawdzone standardy, aby chronić Twoje dane oraz użytkowników.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="kontakt" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 shadow-sm">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 mb-2">Napisz do nas</h2>
+                <p class="text-slate-600 text-sm">Masz pytania? Wypełnij formularz, a odezwiemy się wkrótce.</p>
+            </div>
+            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Wiadomość została wysłana!');">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Twoje Imię</label>
+                    <input type="text" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" placeholder="Jan Kowalski">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Adres E-mail</label>
+                    <input type="email" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" placeholder="jan@example.com">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Wiadomość</label>
+                    <textarea rows="4" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition" placeholder="Napisz w czym możemy Ci pomóc..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-xl transition shadow-lg shadow-indigo-200">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm">
+            <div>
+                <span class="text-white font-bold text-lg">BrandName</span>
+                <p class="text-xs text-slate-500 mt-1">Wszystkie prawa zastrzeżone &copy; 2026</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">Regulamin</a>
+                <a href="#" class="hover:text-white transition">Polityka prywatności</a>
+                <a href="#kontakt" class="hover:text-white transition">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
